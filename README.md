@@ -36,3 +36,12 @@ This repository takes advantage of the helper functions from
 [python-nfs](https://github.com/ktdreyer/python-nfsn) for calculating
 the authentication headers for API requests. This is licensed as CC0,
 which allows this work to retain an MIT license
+
+INSTALLATION
+===========
+symlink update-nfs.py to ~/bin
+symlink update-nfs.service to ~/.config/systemd/user/
+symlink update-nfs.timer to ~/.config/systemd/user/
+symlink override.conf to ~/.config/systemd/user/update-nfs.service.d/
+
+systemctl --user enable update-nfs.timer
