@@ -1,0 +1,5 @@
+[Unit]
+Description=NFS DNS Updater
+
+[Service]
+ExecStart=/home/agoetz/bin/update-nfs.py
